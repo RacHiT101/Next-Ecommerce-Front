@@ -13,6 +13,7 @@ const Featured = ({ product }) => {
 
   const {addProduct} = useContext(CartContext);
 
+
   const addFeaturedToCart = () => {
 
     addProduct(product._id)
@@ -37,7 +38,7 @@ const Featured = ({ product }) => {
               >
                 Read More
               </Link>
-              <button onClick={addFeaturedToCart} className="border-0 py-2 px-2 shadow-sm bg-[#5542F6] text-white rounded cursor-pointer inline-flex items-center no-underline font-poppins font-semibold">
+              <button onClick={() => addFeaturedToCart} className="border-0 py-2 px-2 shadow-sm bg-[#5542F6] text-white rounded cursor-pointer inline-flex items-center no-underline font-poppins font-semibold">
                 <AiOutlineShoppingCart className="mr-2" size={24} /> Add to Cart
               </button>
             </div>
