@@ -33,7 +33,7 @@ const Featured = ({ product }) => {
             </div>
             <div className="flex gap-2 mt-6">
               <Link
-                href={"/product/" + product?._id}
+                href={"/product?id=" + product?._id}
                 className="border-0 py-2 shadow-sm px-2 bg-[#222] border-x-2 border-y-2 shadow-sm border-white text-white rounded cursor-pointer inline-flex items-center no-underline font-poppins font-semibold"
               >
                 Read More
